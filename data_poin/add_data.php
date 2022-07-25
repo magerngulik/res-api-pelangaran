@@ -6,14 +6,15 @@
     $query = "INSERT INTO transaksi_pelangaran(id_guru,id_siswa,id_pelangaran,date_create) VALUES('$id_guru','$id_siswa','$id_pelangaran',now())";
     $sql=mysqli_query($db_connect,$query);
     if ($sql) {
-        respone(200,array('message'=>'Berhasil di tambahkan'));
-        array(
+        // respone(200,array('message'=>'Berhasil di tambahkan'));
+        $ard= array(
             'message'=>'Berhasil di tambahkan',
             'Data 1'=>'Data ke 1',
-            'Data 2'=>'Data ke 2',
-    
-    );
-    }else {
+            'Data 2'=>'Data ke 2' );
+        echo json_encode($ard);
+
+
+        }else {
         respone(400,array('message'=>'Gagal di tambahkan'));        
     }
     mysqli_close($db_connect);   
