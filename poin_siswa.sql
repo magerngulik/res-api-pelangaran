@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 21, 2022 at 06:47 AM
+-- Generation Time: Jul 25, 2022 at 05:33 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -129,7 +129,10 @@ CREATE TABLE `transaksi_pelangaran` (
 INSERT INTO `transaksi_pelangaran` (`id_trans_pelangaran`, `id_guru`, `id_siswa`, `id_pelangaran`, `date_create`) VALUES
 (1, 1, 1, 1, '2022-06-21'),
 (7, 1, 2, 1, '2022-06-21'),
-(8, 1, 1, 2, '2022-06-21');
+(8, 1, 1, 2, '2022-06-21'),
+(9, 1, 1, 2, '2022-07-25'),
+(10, 1, 1, 2, '2022-07-25'),
+(11, 1, 1, 2, '2022-07-25');
 
 --
 -- Indexes for dumped tables
@@ -197,7 +200,7 @@ ALTER TABLE `data_siswa`
 -- AUTO_INCREMENT for table `transaksi_pelangaran`
 --
 ALTER TABLE `transaksi_pelangaran`
-  MODIFY `id_trans_pelangaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_trans_pelangaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
